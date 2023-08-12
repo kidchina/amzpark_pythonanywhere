@@ -2360,28 +2360,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/flacha.jpg) ;
-  background-size: cover;
-  opacity: 0.6;
-  height: 550px;
   position: relative;
-  background-position: center center;
-  
+  height: 550px;
+  background-size: cover;
 }
+
 .banner-area::before {
-  /* Create a pseudo-element to overlay on top of the background image */
+  background-position: center center;
   content: "";
-  /* Set the background color with opacity */
- /* Change the last value (0.0 to 1.0) to adjust the opacity */
-  /* Set the same dimensions as the parent .banner-area */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
- 
-  
-  
+  background-image: url('../img/flacha.jpg'); /* Replace with your background image */
+  background-size: cover;
+  opacity: 0.6; /* Set the desired opacity value (0.0 to 1.0) */
+  z-index: -1;
 }
 
 
