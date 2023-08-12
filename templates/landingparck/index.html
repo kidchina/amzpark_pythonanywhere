@@ -28,52 +28,47 @@
 
 			 
 			<!-- start banner Area -->
-			<section class="banner-area relative" id="home"  >	
-       
-        <div class="container">
-          <div class="row fullscreen d-flex align-items-center justify-content-center">
-            <div class="banner-content col-lg-12">
-              <h1 class="text-white">Find your nearest Car Parks</h1>	
-				<form
-				action="{% url 'locate' %}"
-				method="get"
-				class="search-form-area"
-			  >
-                <div class="row justify-content-center form-wrap">
-                  <div class="input-container">
-                    <input type="text" class="form-control px-4 input-field" placeholder="Enter your destination address" id="search_input">
-                  
-						<i class="fas fa-location-dot icon" id="iconloc" onclick="getlocation()"></i>
-                  </div>
-                  
-                  
-                  
-                  <div class="col-lg-2 form-cols">
-                    <!-- Add the "custom-btn" class to the button element -->
-				<button type="submit" class="btn btn-primary custom-btn">Search</button>
-
-					<br>
-					<input
-					type="text"
-					id = "latitude"
-					name = "latitude"
-					hidden
-				  />
-				  <input
-					type="text"
-					id = "longitude"
-					name = "longitude"
-					hidden
-				  />
-                  </div>								
-                </div>
-              </form>	
-             
-            </div>											
-          </div>
-        </div>
-      </section>
-      
+			<section class="banner-area relative" id="home">
+				<div class="container">
+				  <div class="row fullscreen d-flex align-items-center justify-content-center">
+					<div class="banner-content col-lg-12">
+					  <h1 class="text-white">Find your nearest Car Parks</h1>
+					  <form
+						action="{% url 'locate' %}"
+						method="get"
+						class="search-form-area"
+					  >
+						<div class="row justify-content-center form-wrap">
+						  <div class="input-container">
+							<input
+							  type="text"
+							  class="form-control px-4 input-field"
+							  placeholder="Enter your destination address"
+							  id="search_input"
+							/>
+							<i
+							  class="fas fa-location-dot icon"
+							  id="iconloc"
+							  onclick="getlocation()"
+							></i>
+						  </div>
+						  <div class="col-lg-2 form-cols">
+							<button
+							  type="submit"
+							  class="btn btn-primary custom-btn"
+							>
+							  Search
+							</button>
+							<br />
+							<input type="text" id="latitude" name="latitude" hidden />
+							<input type="text" id="longitude" name="longitude" hidden />
+						  </div>
+						</div>
+					  </form>
+					</div>
+				  </div>
+				</div>
+			  </section>
       
 			<!-- End banner Area -->	
 
@@ -202,6 +197,7 @@
 			height: 5cm;
 			width: 15cm;
 		}
+		
 	  </style>
 	  
 	  <section class="post-area section">
@@ -222,7 +218,7 @@
 			  <div class="single-rated">
 				<!-- Job post content for the first sidebar -->
 				<img class="img-fluid" src="{% static 'img/fastwrite.gif' %}" style="height: 4cm;" alt="">
-				<a href="single.html"><h4 class="methodf">Method 1: Interactive Destination Entry</h4></a>
+				<a href="single.html"><h4 class="methodf">Method 1: nteractive DestiInation Entry</h4></a>
 				
 				<p>			
 				  Say goodbye to typing full addresses! With this method, simply start typing your destination, 
@@ -254,12 +250,13 @@
 	  
 		  <!-- Add the clearfix after the sidebars -->
 		
-<section class="section">
+<section class="section wit" >
 	  <div class="container">
-		<div class="parks_description-area">
+		<div class="parks_description-area" >
 			<div class="centered-div hbt">
 				<h4>Discover your ideal parking effortlessly with our website.</h4>
 			</div>
+			
 			<div class="content-wrapper">
 				<div class="image-container">
 					<img src="{% static 'img/cards_img.png' %}" class="card_img" alt="">
@@ -270,15 +267,35 @@
 						essential information such as names, rates, addresses, durations,
 						and distances from your location. Explore these examples to get a glimpse
 						of the user-friendly interface that simplifies your parking experience.
-						iniha inihaha
+					
 					</p>
 				</div>
 			</div>
+			<hr>
+			<div class="content-wrapper">
+				<div class="image-container">
+					<img src="{% static 'img/map.png' %}" class="map_img" alt="">
+				</div>
+				<div class="text-container">
+					<p>
+						Get a visual overview of your surroundings with our 
+						'Interactive Map Display.' See your location marked with 
+						a prominent red pin and easily spot nearby car parks highlighted by 
+						blue markers. The map simplifies your decision-making process,
+						 allowing you to identify the closest and most suitable parking
+						  spot effortlessly.
+
+
+					</p>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
-</div>
+
 	<style>
+		
 		.hbt{
 			margin-top: 0.7cm;
 		}
@@ -296,9 +313,19 @@
 	}
 	
 	.card_img {
-		max-width: 100%;
+		max-width: 110%;
 		height: auto;
 		border-radius: 8px;
+		
+		
+	}
+	.map_img{
+		border: 7px ;
+		width: 14cm !important;
+		height: 4.7cm;
+		border-radius: 8px;
+		box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.2);
+
 		
 	}
 	

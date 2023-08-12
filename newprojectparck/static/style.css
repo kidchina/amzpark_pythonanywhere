@@ -13,6 +13,11 @@
     cursor: pointer; /* Show the hand cursor on hover */
     transition: color 0.2s;
 } 
+.wit{
+  background-image: url('img/wit_img.png');
+ background-size: cover;
+  background-position: center center;
+}
 
 
 /* Hover effect: Change the color when the user hovers over the icon */
